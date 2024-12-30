@@ -1,0 +1,74 @@
+{
+  "id": "dnd-legendary-magic-items",
+  "title": "Legendary Magic Items",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "description": "<p>The items in this collection were created for the film <i>Dungeons &amp; Dragons: Honor Among Thieves</i>. Each one can tilt the balance of power in any D&amp;D game, so use these items with caution.</p>",
+  "url": "https://github.com/valGavin/dnd-legendary-magic-items",
+  "media": [
+    {
+      "type": "setup",
+      "url": "modules/dnd-legendary-magic-items/assets/art/legendary-magic-items-cover.webp",
+      "thumbnail": "modules/dnd-legendary-magic-items/assets/art/legendary-magic-items-cover.webp",
+      "loop": false,
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "lmi-articles",
+      "label": "Legendary Magic Items",
+      "path": "packs/lmi-articles",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    },
+    {
+      "name": "lmi-items",
+      "label": "Items",
+      "path": "packs/lmi-items",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Legendary Magic Items",
+      "color": "#b2b29a",
+      "sorting": "m",
+      "packs": [
+        "lmi-articles",
+        "lmi-items"
+      ],
+      "folders": []
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "sourceBooks": {
+        "LMI": "Legendary Magic Items"
+      }
+    }
+  }
+}
